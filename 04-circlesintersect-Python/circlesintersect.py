@@ -10,11 +10,9 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	n1 = (x1-x2)*(x1-x2)
 	n2 = (y1-y2)*(y1-y2)
 	circent = math.sqrt(n1 + n2)
-	if(circent < r1 - r2 ):
+	if(circent < r1 - r2 or circent < r2 - r1):
 		return True
-	elif(circent < r2 - r1):
-		return True
-	elif(circent > r1+r2):
+	elif(circent > r1 + r2):
 		return False
 	else:
 		return True 
