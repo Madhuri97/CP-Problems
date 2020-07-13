@@ -8,7 +8,11 @@
 
 public class PythonBasics {
     public String show_excitement() {
-			return "I am super excited for this course! ";
+		String s = "I am super excited for this course! ";
+		for (int i = 0; i < 5; i++) {
+			s += s;
+		}
+		return s;
 		// your code goes here	
 	}
 	public static void main(String[] args) {
