@@ -5,7 +5,6 @@
 # You can only have the string once in your code.
 # Don't just copy/paste it 5 times into a single variable!
 
-
 def show_excitement():
     # Your code goes here!
-    pass
+    return "I am super excited for this course! " * 5
