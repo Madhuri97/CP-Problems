@@ -7,11 +7,13 @@
 def fun_eggcartons(eggs):
 	# your code goes here
 	i = 12
+	if(eggs == 0):
+		return 0
 	if(eggs%i == 0):
 		return  eggs//i
-	elif(eggs%i == 1):
+	if(eggs%i == 1):
 		return eggs//i + 1
 	else:
-		return 0
+		return 1
 
 	
