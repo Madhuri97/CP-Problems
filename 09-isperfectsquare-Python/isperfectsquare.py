@@ -7,8 +7,8 @@ import math
 def isperfectsquare(n):
 	# your code goes here
 	temp = n
-	root = math.sqrt(temp)
 	if(type(temp) != str and temp > 0):
+		root = math.sqrt(temp)
 		if int(root + 0.5)**2 == temp:
 			return True
 	return False
