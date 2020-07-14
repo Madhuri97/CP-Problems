@@ -6,12 +6,13 @@
 
 
 def fun_nearestodd(n):
-	temp = n
+	temp = int(n) 
 	rem = temp%2 
 	if(rem != 0):
-		return int(temp)
+		return temp
 	elif(rem == 0):
-		return temp-1
-	return 2*int((temp%2.0))+1
+		if((temp+1)%2 != 0): 
+			return temp+1
+	return temp
 
 
