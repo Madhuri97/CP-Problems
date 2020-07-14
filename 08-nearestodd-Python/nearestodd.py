@@ -8,6 +8,8 @@
 def fun_nearestodd(n):
 	temp = int(n) 
 	rem = temp%2 
+	if(n%2 == 0):
+		return int(n)-1
 	if(rem != 0):
 		return temp
 	elif(rem == 0):
