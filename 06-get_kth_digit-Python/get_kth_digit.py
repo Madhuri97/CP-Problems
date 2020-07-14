@@ -10,5 +10,5 @@ def fun_get_kth_digit(digit, k):
 	n = abs(digit) 
 	n1 = n%10**(k+1) 
 	n2 = n%10**(k)   
-	num = (n1 + n2)/(10**k)  
-	return abs(num)
+	num = (n2 + n1)/(10**k)  
+	return abs(num) 
