@@ -39,8 +39,7 @@ public class Classy {
             } else {
                 addItem += 0;
             }
-        }
-        
+        } 
         return addItem;
     }
     public static void main(String[] args) {
