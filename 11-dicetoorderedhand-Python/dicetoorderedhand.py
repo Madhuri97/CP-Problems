@@ -13,4 +13,20 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	pass
+	maxi = max(a,b,c)
+	mini = min(a,b,c)
+	if(a == maxi and c == mini):
+		return a*100 + b*10 + c
+	elif(a == maxi and b == mini):
+		return a*100 + c*10 + b
+	elif(b == maxi and c == mini):
+		return b*100 + a*10 + c
+	elif(b == maxi and a == mini):
+		return b*100 + c*10 + a
+	elif(c == maxi and a == mini):
+		return c*100 + b*10 + a
+	elif(c == maxi and b == mini):
+		return c*100 + a*10 + b
+	
+
+	
