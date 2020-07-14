@@ -11,8 +11,8 @@ def fun_nearestodd(n):
 	if(rem != 0):
 		return temp
 	elif(rem == 0):
-		return temp-1
-	else:
-		return temp+1
+		if((temp+1)%2 != 0): 
+			return temp+1
+	return temp
 
 
