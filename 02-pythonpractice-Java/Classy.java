@@ -15,9 +15,35 @@
 // Everything else has 0 points.
 // Use the test cases below to guide you!
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 
 public class Classy {
+    ArrayList<String> items = new ArrayList<>();
+    // String s;
+    int addItem = 0; 
+    public void addItem(String s) {
+        items.add(s);
+    }
+    public int classiness() {
+        for(String item:items) {
 
+            if(item.equals("tophat")){
+                addItem += 2;
+            }
+            if(item.equals("bowtie")){
+                addItem += 4;
+            }
+            if(item.equals("monocle")) {
+                addItem += 5;
+            } else {
+                addItem += 0;
+            }
+        }
+        
+        return addItem;
+    }
+    public static void main(String[] args) {
+        
+    }
 }
