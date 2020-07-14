@@ -9,9 +9,9 @@ def fun_nearestodd(n):
 	temp = n
 	rem = temp%2 
 	if(rem != 0):
-		return temp
+		return int(temp)
 	elif(rem == 0):
 		return temp-1
-	return 2*(temp%2.0)+1
+	return 2*int((temp%2.0))+1
 
 
