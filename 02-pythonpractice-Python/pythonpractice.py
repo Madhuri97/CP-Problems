@@ -12,9 +12,25 @@ with them:
 "tophat" = 2
 "bowtie" = 4
 "monocle" = 5
-Everything else has 0 points.
+Everything else has 0 points
 Use the test cases below to guide you!"""
 
 class Classy(object):
     def __init__(self):
         self.items = []
+        self.c = 0
+    
+    def classiness(self):
+        return self.c
+
+    def addItem(self, s):
+        if s == "tophat":
+            self.c += 2
+        elif s == "bowtie":
+            self.c += 4
+        elif s == "monocle":
+            self.c += 5
+        else:
+            self.c += 0
+        return self.c
+
