@@ -4,14 +4,14 @@ from isperfectsquare import isperfectsquare
 import pytest
 
 
-@pytest.mark.parametrize('n, result',[
+@pytest.mark.parametrize('row, result',[
 	("hello", False), 
 	(6.25, False), 
 	(625, True), 
 	(-625, False), 
 	(4, True), 
 	(100, True), 
-	("100", True), 
+	("100", False), 
 ])
 def test_isperfectsquare(row, result):
     assert isperfectsquare(row) == result
