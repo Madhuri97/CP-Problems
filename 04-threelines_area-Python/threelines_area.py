@@ -7,4 +7,3 @@ import math
 def fun_threelines_area(a, b, c):
 	side = (a+b+c)/2
 	return int(math.sqrt(side*(side-a)*(side-b)*(side-c)))
-	
