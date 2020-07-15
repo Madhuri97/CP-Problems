@@ -13,6 +13,6 @@ def largestperfectsquare(n):
 	if(type(n) == int and n > 0):
 		for i in range(0,n):
 			root = math.sqrt(i)
-			if (root + 0.5)**2 <= n:
+			if int(root + 0.5)**2 <= n:
 				temp = int(root+0.5)**2
 		return temp
