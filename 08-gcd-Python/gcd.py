@@ -12,11 +12,6 @@ def gcd(m, n): #2,3
 	# your code goes here
 	if(n == 0):
 		return m
-	if(m > n and m == 0):  
-		mini = n
 	else:
-		mini = m  
-	for i in range(1,mini+1):  
-		if(m%i == 0 and n%i == 0):  
-			gcd = i					
-	return gcd						
+		gcd(n,m%n)				
+						
