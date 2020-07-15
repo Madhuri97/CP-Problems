@@ -18,5 +18,5 @@ def gcd(m, n): #2,3
 		mini = m  
 	for i in range(1,mini+1):  
 		if(m%i == 0 and n%i == 0):  
-			gcd = i					
-	return gcd						
+			gcdn = i					
+	return gcdn						
