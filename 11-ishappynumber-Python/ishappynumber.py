@@ -20,12 +20,9 @@ def ishappynumber(n):
 	r = 0
 	while(n > 0):
 		r = n % 10
-		if(r == 0):
-			return False
-		else:
-			sum = sum + (r**2)
-			n = n//10
-		return sum
+		sum = sum + (r**2)
+		n = n//10
+	return sum
 	num = n
 
 	while(num != 1 and num != 4):
