@@ -7,9 +7,18 @@
 
 def fun_set_kth_digit(n, k, d):
 	num = abs(n)
-	n1 = num%10**(k+1)
-	n2 = num%10**k
-	res = int(abs((n2-n1)/(10**k)))
-	
-	return res
+	s = str(num)
+	if k < len(s):
+		i = int(len(s)-k-1)
+		s1 = s[0:i]+str(d)+s[i+1:len(s)]
+		return int(s1)
+	else:
+		if n > 0:
+			s1 = str(d)+s
+			return int(s1)
+		else :
+			# s1 = abs(n)
+			s1 = str(d)  + str(s1)
+			s1 = int(s1) * -1
+			return s1
 
