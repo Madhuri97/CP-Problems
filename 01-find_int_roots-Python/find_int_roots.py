@@ -6,8 +6,10 @@
 # in increasing order. How does a function return multiple values? Like so:
 # return root1, root2
 
-import math
+import cmath #performs complex square root
 def fun_find_int_roots(a, b, c):
-	return 0, 0
-
-
+	sqrts = (b**2) - (4*a*c)
+	s1 = (-b - cmath.sqrt(sqrts))/(2*a)
+	s2 = (-b + cmath.sqrt(sqrts))/(2*a)
+	return s1, s2
+	
