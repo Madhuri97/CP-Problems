@@ -43,6 +43,6 @@ def sortUSA():
 def alphaAsia():
     cts = []
     for i, j in locations['Asia'].items():
-        cty = j[0] +" - "+ i
+        cty = j[0] + " - " + i
         cts.append(cty)
     return(sorted(cts))
