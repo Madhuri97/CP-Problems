@@ -5,7 +5,11 @@
 # so the 0th digit is the rightmost digit. 
 
 
-
 def fun_set_kth_digit(n, k, d):
-		return 0
+	num = abs(n)
+	n1 = num%10**(k+1)
+	n2 = num%10**k
+	res = (n2-n1)/(10**k)
+	
+	return res
 
