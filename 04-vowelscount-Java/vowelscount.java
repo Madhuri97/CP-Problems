@@ -14,7 +14,7 @@ class vowelscount {
 				count = count + 1;
 			}
 		}
-		return count-1;
+		return count;
 	}
 	public static void main(String[] args) {
 		
