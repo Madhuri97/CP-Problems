@@ -13,5 +13,5 @@ def gcd(m, n): #2,3
 	if(n == 0):
 		return m
 	else:
-		gcd(n,m%n)				
+		return gcd(n,m%n)				
 						
