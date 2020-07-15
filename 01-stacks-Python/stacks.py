@@ -42,16 +42,16 @@ class stack(object):
         self.ll = LinkedList(top)
 
     def push(self, new_element):
-        if self.head == None:
-            self.head = Element(new_element)
+        if self.ll.top == None:
+            self.ll.top = Element(new_element)
         else:
-            self.ll.insert_first()
+            self.ll.insert_first(new_element)
         "Push (add) a new element onto the top of the stack"
 
     def pop(self):
         "Pop (remove) the first element off the top of the stack and return it"
-        if self.head == None:
-            self.head = None
+        if self.ll.top == None:
+            self.ll.top = None
         else:
             self.ll.delete_first()
     
