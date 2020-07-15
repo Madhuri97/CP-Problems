@@ -34,7 +34,7 @@ locations = {'North America': {'USA': ['Mountain View']}}
 locations['Asia'] = {'India': ['Bangalore']}
 locations['North America']['USA'].append('Atlanta')
 locations['Africa'] = {'Egypt':['Cairo']}
-locations['Asia']['China'] = ['Shangai']
+locations['Asia']['China'] = ['Shanghai']
 
 def sortUSA():
     r = sorted(locations['North America']['USA'])
