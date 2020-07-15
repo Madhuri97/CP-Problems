@@ -19,6 +19,6 @@ def fun_set_kth_digit(n, k, d):
 		else :
 			# s1 = abs(n)
 			s1 = str(d)  + s
-			s1 = int(s1) * -1
-			return s1
+			# s1 = int(s1) * -1
+			return int(s1)*-1
 
