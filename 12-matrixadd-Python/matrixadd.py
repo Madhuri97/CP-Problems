@@ -17,11 +17,17 @@
 
 def matrixadd(L, M):
 	# Your code goes here
-	N = []
-	for i in range(len(L)):
-		for j in range(len(L[0])):
-			N[i][j] = L[i][j]+M[i][j]
-	return N[i][j]
+	row1 = L[0]
+	row2 = M[0]
+	col1 = L[1]
+	col2 = M[1]
+	if(len(L) == len(M) and len(row1) == len(row2) and len(col1) == len(col2)):
+		N = []
+		for i in range(len(L)):
+			for j in range(len(L[0])):
+				N[i][j] = L[i][j]+M[i][j]
+		return N
+	
 	# N = arr.array('k',)
 	# for i in range(len(L)):
 	# 	for j in range(len(L[0])):
