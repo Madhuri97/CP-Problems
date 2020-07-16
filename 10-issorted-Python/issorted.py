@@ -17,7 +17,8 @@ def issorted(a):    #[1, 2, 3, 4, 5.5, 5.1, 7, 8, 9, 10]
 	# else:
 	# 	return False
 	s = sorted(a)
-	if(a == s):
+	s1 = sorted(a, reverse = True)
+	if(a == s or a == s1):
 		return True
 	else:
 		return False
