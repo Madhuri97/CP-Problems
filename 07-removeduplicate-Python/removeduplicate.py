@@ -12,6 +12,4 @@ def removeduplicate(text):
 		else:
 			t = t+i
 	return t
-
-
 	
