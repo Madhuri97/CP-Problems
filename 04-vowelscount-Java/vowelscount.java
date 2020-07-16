@@ -6,6 +6,7 @@
 
 class vowelscount {
 	public int fun_vowelscount(String s){
+		s.toLowerCase();
 		// your code goes here
 		int count = 0;
 		for (int i = 0; i < s.length(); i++){
