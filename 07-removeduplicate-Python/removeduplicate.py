@@ -5,4 +5,13 @@
 
 def removeduplicate(text):
 	# Your code goes here
-	pass
+	t=""
+	for i in text:
+		if i in t:
+			pass
+		else:
+			t = t+i
+	return t
+
+
+	
