@@ -17,7 +17,7 @@
 
 def matrixadd(L, M):  #L=1 ; M=10
 	# Your code goes here
-
+	# print(len(L[0]), len(L[1]), len(M[0]))
 	if(len(L) == len(M) and len(L[0]) == len(M[0]) and len(L[1]) == len(M[1])):
 		N = []
 		for i in range(len(L)):
@@ -26,9 +26,16 @@ def matrixadd(L, M):  #L=1 ; M=10
 		return N
 	else:
 		return None
+# matrixadd([[1, 2, 3], [4, 5, 6], [7, 8, 9]],[[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 	# N = arr.array('k',)
 	# for i in range(len(L)):
 	# 	for j in range(len(L[0])):
 	# 		N[i][j] = L[i][j] + M[i][j]
 	# for k in N:
 	# 	return k
+
+	# 1 2 3              1 2 3      2 4 6        
+	# 4 5 6              4 5 6      8 10 12
+	# 7 8 9              7 8 9      14 16 18
+	
+	
