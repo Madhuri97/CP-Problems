@@ -21,3 +21,4 @@ def mostfrequentdigit(n):
 				cnt += 1
 		if cnt > 0:
 			return int(ini)
+		
