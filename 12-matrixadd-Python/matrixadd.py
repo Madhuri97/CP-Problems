@@ -17,7 +17,7 @@
 import array as arr
 def matrixadd(L, M):
 	# Your code goes here
-	N = arr.array('i')
+	N = arr.array('k')
 	for i in range(len(L)):
 		for j in range(len(L[0])):
 			N[i][j] = L[i][j] + M[i][j]
