@@ -5,7 +5,7 @@ import pytest
 
 
 @pytest.mark.parametrize('a, result',[
-    ("JavaPython", "JavPython"), ("HelloWorld", "HelloWrld"), ("EEE", "E"),
+    ("JavaPython", "JavPython"), ("HelloWorld", "HeloWrd"), ("EEE", "E"),
     ("a a ", "a "), ("121212121", "12"), ("", ""),
     ("Test", "Test"), ("1001", "10"), ("11110000", "10"),
 ])
