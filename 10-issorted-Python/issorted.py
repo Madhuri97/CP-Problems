@@ -6,8 +6,14 @@
 # the list.
 
 def issorted(a):
-	s = sort(a)
-	if(a == s):
+	l = int(abs(a))
+	i = 0
+	cnt = 1
+	while i < len(l):
+		if(l[i] < l[i -1]):
+			cnt = 1
+		i += 1
+	if cnt == 1:
 		return True
 	else:
 		return False
