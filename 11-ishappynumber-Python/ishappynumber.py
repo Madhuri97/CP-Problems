@@ -16,19 +16,20 @@
 
 def ishappynumber(n):
 	# your code goes here
-	sum = 0
-	r = 0
-	while(n > 0):
-		r = n % 10
-		sum = sum + (r**2)
-		n = n//10
-	return sum
-	num = n
-
-	while(num != 1 and num != 4):
-		num = ishappynumber(num)
-
-	if(num == 1):
-		return True
-	else:
-		return False
+	def sumOfSquares(n1):
+		s = 0
+		while n1 > 0:
+			r = n1 % 10
+			s = s + (r**2)
+			n1 = n1//10
+		return s
+	l = []
+	while sumOfSquares(n) not in l:
+		res = sumOfSquares(n)
+		if res == 1:
+			return True
+		else:
+			l.append(res)
+			n = res
+	return False
+	
