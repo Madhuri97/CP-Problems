@@ -27,6 +27,7 @@ def ishappynumber(n):
 			l.append(res)
 			n = res
 	return False
+	
 def fun_nth_happy_number(n):
 	li = []
 	for i in range(50):
