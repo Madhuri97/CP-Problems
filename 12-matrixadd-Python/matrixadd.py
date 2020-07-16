@@ -15,19 +15,17 @@
 # None if the two matrices 
 # cannot be added because they are of different dimensions.
 
-def matrixadd(L, M):
+def matrixadd(L, M):  #L=1 ; M=10
 	# Your code goes here
-	row1 = L[0]
-	row2 = M[0]
-	col1 = L[1]
-	col2 = M[1]
-	if(len(L) == len(M) and len(row1) == len(row2) and len(col1) == len(col2)):
+
+	if(len(L) == len(M) and len(L[0]) == len(M[0]) and len(L[1]) == len(M[1])):
 		N = []
 		for i in range(len(L)):
 			for j in range(len(L[0])):
 				N[i][j] = L[i][j]+M[i][j]
 		return N
-	
+	else:
+		return None
 	# N = arr.array('k',)
 	# for i in range(len(L)):
 	# 	for j in range(len(L[0])):
