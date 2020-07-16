@@ -6,11 +6,11 @@
 
 class vowelscount {
 	public int fun_vowelscount(String s){
-		s.toLowerCase();
+		String str = s.toLowerCase();
 		// your code goes here
 		int count = 0;
-		for (int i = 0; i < s.length(); i++){
-			char ch = s.charAt(i);
+		for (int i = 0; i < str.length(); i++){
+			char ch = str.charAt(i);
 			if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
 				count = count + 1;
 			}
