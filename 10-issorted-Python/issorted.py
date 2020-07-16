@@ -11,7 +11,6 @@ def issorted(a):
 	while i < len(a): 
 		if(a[i] < a[i -1]): 
 			cnt = 1
-		cnt = 0
 		i += 1
 	if  not cnt:
 		return True
