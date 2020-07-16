@@ -14,7 +14,12 @@
 # may assume only contain numbers, and returns a new 2d list that is the result of adding the two matrices. Return 
 # None if the two matrices 
 # cannot be added because they are of different dimensions.
-
+import array as arr
 def matrixadd(L, M):
 	# Your code goes here
-	pass
+	N = arr.array('k', L)
+	for i in range(len(L)):
+		for j in range(len(L[0])):
+			N[i][j] = L[i][j] + M[i][j]
+	for k in N:
+		return k
