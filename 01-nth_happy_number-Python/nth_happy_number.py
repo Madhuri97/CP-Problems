@@ -10,6 +10,26 @@
 # assert(nthHappyNumber(6) == 28)
 # assert(nthHappyNumber(7) == 31)
 
-
+def ishappynumber(n):
+	def sumOfSquares(n1):
+		s = 0
+		while n1 > 0:
+			r = n1 % 10
+			s = s + (r**2)
+			n1 = n1 // 10
+		return s
+	l = []
+	while sumOfSquares(n) not in l:
+		res = sumOfSquares(n)
+		if res == 1:
+			return True
+		else:
+			l.append(res)
+			n = res
+	return False
 def fun_nth_happy_number(n):
-	return 0
+	li = []
+	for i in range(50):
+		if ishappynumber(i):
+			li.append(i)
+	return li[n]
