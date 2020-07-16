@@ -5,21 +5,22 @@
 # learn soon, it runs in O(n) time, where n=len(a)), and so in particular you may not sort 
 # the list.
 
-def issorted(a):    #[1, 2, 3, 4, 5.5, 5.1, 7, 8, 9, 10]
-	# i = 0           #i=0=>1=>2=>3=>4=>5.5
-	# cnt = 1         #1
-	# while i < len(a): #T T T T
-	# 	if(a[i] < a[i -1]): #2 < 1(F), 3 < 2(F), (F), (F),
-	# 		cnt = 1
-	# 	i += 1
-	# if cnt == 1:
-	# 	return True
-	# else:
-	# 	return False
-	s = sorted(a)
-	s1 = sorted(a, reverse = True)
-	if(a == s or a == s1):
+def issorted(a):    
+	i = 1           
+	cnt = 0         
+	while i < len(a): 
+		if(a[i] < a[i -1]): 
+			cnt = 1
+		cnt = 0
+		i += 1
+	if  not cnt:
 		return True
 	else:
 		return False
+	# s = sorted(a)
+	# s1 = sorted(a, reverse = True)
+	# if(a == s or a == s1):
+	# 	return True
+	# else:
+	# 	return False
 	# your code goes here
