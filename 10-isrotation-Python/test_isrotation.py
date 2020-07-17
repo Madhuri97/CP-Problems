@@ -3,10 +3,13 @@ import os,sys
 sys.path.append(os.getcwd())
 from isrotation import isrotation
 import pytest
+# 34123412
+#1234512345
+# 1001010010
 
 
 @pytest.mark.parametrize("a, b, result",[
-	(3412, 1234, True), (12345, 54321, True),
+	(3412, 1234, True), (12345, 54321, False),
 	(1234, 1234, True), (12345, 4321, False),
 	(3142, 1234, False), (10010, 10100, True),
 	(431256789, 123456789, False), (101111, 11110, False),
