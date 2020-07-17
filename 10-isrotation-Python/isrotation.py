@@ -9,12 +9,15 @@ def isrotation(x, y):
 	# Your code goes here
 	if(len(str(x)) != len(str(y))):
 		return False
-	else:
-		while(x == y):  #3124 1234(T)
-			p = pow(10, len(str(x))-1)
-			for i in range(len(str(x))-1):
-				fd = x//p
-				left = (x*10+fd - (fd*p*10))
-			x = left 
+	if str(y) in str(x)+str(x):
 		return True
 	return False
+	# else:
+	# 	while(x == y):  #3124 1234(T)
+	# 		p = pow(10, len(str(x))-1)
+	# 		for i in range(len(str(x))-1):
+	# 			fd = x//p
+	# 			left = (x*10+fd - (fd*p*10))
+	# 		x = left 
+	# 	return True
+	# return False
