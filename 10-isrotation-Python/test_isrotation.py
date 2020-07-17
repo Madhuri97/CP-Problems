@@ -7,7 +7,6 @@ import pytest
 #1234512345
 # 1001010010
 
-
 @pytest.mark.parametrize("a, b, result",[
 	(3412, 1234, True), (12345, 54321, False),
 	(1234, 1234, True), (12345, 4321, False),
