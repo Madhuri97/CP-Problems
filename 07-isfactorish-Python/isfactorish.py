@@ -12,5 +12,12 @@
 
 
 def fun_isfactorish(n):
+	if(n == abs(n) and len(str(n)) < 3):
+		r = n%10 
+		while(r != 0):
+			if(n%r == 0):
+				n = n//10
+			r = n%10
+		return True
 	return False
 
