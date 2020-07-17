@@ -7,4 +7,7 @@
 
 def isrotation(x, y):
 	# Your code goes here
-	pass
+	if(len(str(x)) != len(str(y))):
+		return False
+	else:
+		return True
