@@ -22,7 +22,7 @@ def fun_isadditive(n):
 
 def fun_nth_additive_prime(n):
 	li = []
-	for i in range(max(n)):
-		if isPrime(i) and fun_isadditive(i):
+	for i in range(10000):
+		if fun_isadditive(i):
 			li.append(i)
 	return li[n]
