@@ -13,10 +13,9 @@
 
 def fun_isfactorish(n):
 	num = str(abs(n))
-	if(len(num) != 3 or (num[0] == num[1] or num[1] == num[2] or num[2] == num[0])):
+	if(len(num) != 3 or (num[0] == num[1] or num[1] == num[2] or num[2] == num[0]) or num.count("0") > 0):
 		return False
 	return True
-	
 	# if(len(str(num)) == 2):
 	# 	r = num%10 
 	# 	while(r != 0):
@@ -25,4 +24,3 @@ def fun_isfactorish(n):
 	# 		r = num%10
 	# 	return True
 	# return False
-
