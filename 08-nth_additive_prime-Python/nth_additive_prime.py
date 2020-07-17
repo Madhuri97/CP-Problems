@@ -12,17 +12,18 @@ def isPrime(n):
 def fun_isadditive(n):
 	s = 0
 	if(isPrime(n)):
-		while(n > 0): #T T T 
-			r = n%10  #0 0 0
-			s = s + r #0 0 0
-			n = n//10 #0 5 2
-		if(isPrime(s)): #
+		while(n > 0): 
+			r = n%10  
+			s = s + r 
+			n = n//10 
+		if(isPrime(s)):
 			return True
 		return False
+	return False
 
 def fun_nth_additive_prime(n):
 	li = []
-	for i in range(10000):
+	for i in range(200):
 		if fun_isadditive(i):
 			li.append(i)
 	return li[n]
