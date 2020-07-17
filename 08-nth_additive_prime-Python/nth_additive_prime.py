@@ -6,9 +6,9 @@
 def isPrime(n):
 	if(n > 1):
 		for i in range(2,n):
-			if(n%1 == 0 and n%i == 0):
+			if(n%i == 0):
 				return False
-			return True
+		return True
 	return False
 
 def fun_isadditive(n):
