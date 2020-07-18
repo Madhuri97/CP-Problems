@@ -33,7 +33,7 @@ def ismostlymagicsquare(a):
 		res2 += a[i][i]
 	temp.append(res2)
 
-	if len(set(a))>1:
+	if len(set(temp))>1:
 		return False
 	return True
 
