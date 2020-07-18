@@ -14,7 +14,7 @@ def fun_getaverage(s):
 	for i in sp: #13
 		# print(type(int(i)))
 		if(i.isdigit()): #T
-			if(int(i) > 0): #T
+			if(int(i) >= 0): #T
 				sum = sum+int(i) #13
 				cnt += 1
 	if(cnt == 0):
