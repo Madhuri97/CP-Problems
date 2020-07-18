@@ -29,8 +29,8 @@ def ismostlymagicsquare(a):
 	temp.append(res1)
 
 	res2 = 0
-	for j in range(l-1, -1, -1):
-		res2 += a[j][j]
+	for i in range(l-1, -1, -1):
+		res2 += a[i][i]
 	temp.append(res2)
 
 	if len(set(a))>1:
