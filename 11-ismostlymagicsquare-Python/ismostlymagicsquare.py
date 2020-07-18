@@ -18,7 +18,7 @@ def ismostlymagicsquare(a):
 	l = len(a[0])
 	temp = []
 
-	temp.extend()([sum(li) for li in a])
+	temp.extend([sum(li) for li in a])
 
 	for n in range(l):
 		temp.append(sum(m[n] for m in a))
@@ -29,7 +29,7 @@ def ismostlymagicsquare(a):
 	temp.append(res1)
 
 	res2 = 0
-	for j in range(l-1, 0, -1):
+	for j in range(l-1, -1, -1):
 		res2 += a[j][j]
 	temp.append(res2)
 
