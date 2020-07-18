@@ -13,5 +13,3 @@ def fun_alternatingsum(a):
 		if(not isEven(i)):
 			a[i] = a[i]*(-1)
 	return sum(a)
-
-
