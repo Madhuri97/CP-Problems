@@ -9,14 +9,16 @@
 
 def fun_getaverage(s): 
 	sum = 0 #0
+	# cnt = 0
 	sp = s.split(',')
 	for i in sp: #13
 		# print(type(int(i)))
 		if(i.isdigit()): #T
-			if(i.isdigit() > 0):
-				sum = sum+i #13
+			if(int(i) > 0): #T
+				# cnt += 1
+				sum = sum+int(i) #13
 		avg = sum/2
-		return float(avg)
+	return float(avg)
 
 # fun_getaverage("13,excused,14,absent")
 
