@@ -14,6 +14,6 @@ def fun_hasnoprimes(l):
 	for i in t:
 		if(isprime(i)):
 			return False
-		return True
+	return True
 	
 
