@@ -9,11 +9,11 @@ def isprime(n):
 		return True
 
 def fun_hasnoprimes(l):
-	if(len(l) > 1):
-		t = [j for sub in l for j in sub]
-		for i in t:
-			if(isprime(i)):
-				return False
-			return True
-	return False
+	
+	t = [j for sub in l for j in sub]
+	for i in t:
+		if(isprime(i)):
+			return False
+		return True
+	
 
