@@ -11,8 +11,7 @@ def hasduplicates(L):
 	for i in TL:
 		if i in temp:
 			count = count+1
-		else:
-			temp = temp + i
+		return False
 	if count >= 1:
 		return True
 	return False
