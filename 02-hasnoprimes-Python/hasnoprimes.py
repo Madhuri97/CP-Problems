@@ -9,5 +9,6 @@ def fun_hasnoprimes(l):
 				for k in range(2, len(i)):
 					if(j%k == 0): 
 						return False
+		return False
 	return True
 
