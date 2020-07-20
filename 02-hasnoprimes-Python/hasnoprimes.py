@@ -1,9 +1,9 @@
 # Write the function hasnoprimes(L) that takes a 2d list L of integers, 
 # and returns True if L does not contain any primes, and False otherwise.
 
-# [[9,12]; [8]; [16,8]]
+# [[12,4,6]; [8,12,14]; [6,18]]
 def fun_hasnoprimes(l):
-	if(len(l) > 1):
+	if(len(l) > 1): #3>1
 		for i in l:  #[9,12]
 			for j in i: #9
 				if(j > 1): #T
