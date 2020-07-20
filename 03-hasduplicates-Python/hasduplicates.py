@@ -5,4 +5,12 @@
 
 def hasduplicates(L):
 	# Your code goes here
-	pass
+	count = 0
+	temp = []
+	TL = [j for sub in L for j in sub]
+	for i in TL:
+		if i in temp:
+			count = count+1
+	if count >= 1:
+		return True
+	return False
