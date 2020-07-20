@@ -6,14 +6,13 @@ def isprime(n):
 	for i in range(2,n):
 		if(n%1 == 0 and n%i == 0):
 			return False
-		return True
+	return True
 
 def fun_hasnoprimes(l):
 	
 	t = [j for sub in l for j in sub]
 	for i in t:
-		if(isprime(i)):
+		if(isprime(int(i))):
 			return False
 	return True
 	
-
