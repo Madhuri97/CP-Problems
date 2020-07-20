@@ -12,7 +12,7 @@ def hasduplicates(L):
 		if i in temp:
 			count = count+1
 		else:
-			temp +=i
+			temp = temp + i
 	if count >= 1:
 		return True
 	return False
