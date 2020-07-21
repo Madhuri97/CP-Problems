@@ -5,7 +5,14 @@
 
 
 def fun_matrixmultiply(m1, m2):
-    res = [[]]
+    if(len(m1[0]) != len(m2)):
+        return None
+    res = []
+    for i in range(len(m1)):
+        s = []
+        for j in range(len(m2[0])):
+            s.append(0)
+        res.append(s)
     if(len(m1) != 0 and len(m2) != 0):
         for i in range(len(m1)):
             for j in range(len(m2[0])):
@@ -14,6 +21,10 @@ def fun_matrixmultiply(m1, m2):
         for r in res:
             return r
     return None
+    # if(len(m1) != 0 or len(m2) != 0): 
+    #     res = [[sum(a*b for a,b in zip(m1_row,m2_col)) for m2_col in zip(*m2)] for m1_row in m1]
+    #     return res
+    # return None
 
 
 
