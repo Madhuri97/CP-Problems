@@ -19,5 +19,28 @@
 
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
-	pass
-	
+	lo = 0
+	hi = len(L)-1
+	mid = 0
+	l1 = []
+	t1 = ()
+	while lo <= hi:
+		mid = (hi+lo)//2
+		if L[mid] < v:
+			lo = mid + 1
+			t1 = (mid, L[mid])
+			l1.appendleft(t1)
+
+		elif L[mid] > v:
+			hi = mid - 1
+			t1= (mid, L[mid])
+			l1.appendleft(t1)
+
+		else:
+			return mid
+	return -1 
+
+	res = recursion_binarysearchvalues(L,v)
+	if res !=  -1:
+		return l1
+	return 0
