@@ -10,4 +10,12 @@
 
 def inverselookandsay(a):
 	# Your code goes here
-	pass
+	fnl = []
+	for i in range(len(a)):
+		if a[i] == ():
+			return fnl
+		(p,q) = a[i]
+		for j in range(p):
+			fnl.append(q)
+	return fnl
+	
