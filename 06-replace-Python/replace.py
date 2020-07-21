@@ -7,12 +7,25 @@
 # helloworld123 world 345
 
 def fun_replace(s1, s2, s3):
-	for i in range(len(s1)):  #0-15
-		while(i < len(s3)):	  #0-5 1-5 2-5 3-5
-			if(s1[i] == s2[i]): #h=h(T) (T) (T)
-				s1[i] = s3[i] # 3 4 5
-			i = i+1
-	return s1
-	# s1 = s1.replace(s2,s3)
+	idx = s1.count(s2)
+	if(idx == 0):
+		return s1
+
+	elif idx == 1:
+		s = ""
+		before = s1.find(s2)
+		after = before + len(s2)
+		s = s1[0:before]+s3+s1[after:]
+		return s
+		
+	else:
+		s = s1
+		for i in range(idx):
+			before = s.find(s2)
+			after = before + len(s2)
+			s = s[0:before] + s3 + s[after:]
+		return s
+	
+			# s1 = s1.replace(s2,s3)
 	# return s1
 
