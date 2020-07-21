@@ -5,4 +5,14 @@
 
 def recursion_powersof3ton(n):
 	# Your code goes here
-	pass
+	num = int(n)
+	if num <= 0:
+		return None
+	if num == 1:
+		return[1]
+	else: 
+		# highest mulple of 3 is 3**19
+		if (3**19)%num == 0:
+			return sorted([num]+recursion_powersof3ton(num-1))
+		else:
+			return recursion_powersof3ton(num-1)
