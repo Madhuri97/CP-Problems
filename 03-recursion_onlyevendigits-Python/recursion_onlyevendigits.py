@@ -21,3 +21,4 @@ def fun_recursion_onlyevendigits(l):
 	if(len(l) != 0):
 		return[iseven(l[0])]+fun_recursion_onlyevendigits(l[1:]) 
 	return []
+	
