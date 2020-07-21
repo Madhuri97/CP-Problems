@@ -13,6 +13,7 @@ def isrotated(str1, str2):
 		return True
 	else:
 		return False
+		
 	# str2=str2[::-1]
 	# if(str1 == str2):
 	# 	return True
