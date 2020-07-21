@@ -18,6 +18,7 @@
 def matrixadd(L, M):  #L=1 ; M=10
 	# Your code goes here
 	# print(len(L[0]), len(L[1]), len(M[0]))
+	
 	res = []
 	if(len(L) == len(M) and len(L[0]) != len(M[0])):
 		return None
@@ -30,7 +31,7 @@ def matrixadd(L, M):  #L=1 ; M=10
 				N.append(L[i][j]+M[i][j])
 			res.append(N)
 		return res
-		
+
 # matrixadd([[1, 2, 3], [4, 5, 6], [7, 8, 9]],[[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 	# N = arr.array('k',)
 	# for i in range(len(L)):
