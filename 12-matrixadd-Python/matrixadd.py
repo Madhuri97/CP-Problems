@@ -18,14 +18,18 @@
 def matrixadd(L, M):  #L=1 ; M=10
 	# Your code goes here
 	# print(len(L[0]), len(L[1]), len(M[0]))
-	if(len(L) == len(M) and len(L[0]) == len(M[0]) and len(L[1]) == len(M[1])):
-		N = []
-		for i in range(len(L)):
-			for j in range(len(L[0])):
-				N[i][j] = L[i][j]+M[i][j]
-		return N
-	else:
+	res = []
+	if(len(L) == len(M) and len(L[0]) != len(M[0])):
 		return None
+	else:
+		for i in range(len(L)):
+			if i > 0  and len(L[i] != len(M[i])):
+				return None
+			N = []
+			for j in range(len(L[0])):
+				N.append(L[i][j]+M[i][j])
+			res.append(N)
+		return res
 # matrixadd([[1, 2, 3], [4, 5, 6], [7, 8, 9]],[[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 	# N = arr.array('k',)
 	# for i in range(len(L)):
