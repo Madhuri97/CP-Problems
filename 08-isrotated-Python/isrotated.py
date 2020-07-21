@@ -22,9 +22,3 @@ def isrotated(str1, str2):
 	if s2 in s1*2:
 		return True
 	return False
-		
-	# str2=str2[::-1]
-	# if(str1 == str2):
-	# 	return True
-	# else:
-	# 	return False
