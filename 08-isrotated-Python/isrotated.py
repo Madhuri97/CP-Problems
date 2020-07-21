@@ -6,13 +6,20 @@
 # XYZ ZXY
 def isrotated(str1, str2):
 	#Your code goes here
-	s = ""
-	for i in str2: #Z
-		s = i + s  #Z
-	if(str1 == s):
-		return True
-	else:
+	# s = ""
+	# for i in str2: #Z
+	# 	s = i + s  #Z
+	# if(str1 == s):
+	# 	return True
+	# else:
+	# 	return False
+	s1 = str(str1)
+	s2 = str(str2)
+	if(len(s1) != len(s2)):
 		return False
+	if s2 in s1*2:
+		return True
+	return False
 		
 	# str2=str2[::-1]
 	# if(str1 == str2):
