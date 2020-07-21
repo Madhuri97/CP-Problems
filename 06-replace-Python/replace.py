@@ -17,7 +17,7 @@ def fun_replace(s1, s2, s3):
 		after = before + len(s2)
 		s = s1[0:before]+s3+s1[after:]
 		return s
-		
+
 	else:
 		s = s1
 		for i in range(idx):
@@ -28,4 +28,5 @@ def fun_replace(s1, s2, s3):
 	
 			# s1 = s1.replace(s2,s3)
 	# return s1
+
 
