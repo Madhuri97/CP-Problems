@@ -23,7 +23,7 @@ def matrixadd(L, M):  #L=1 ; M=10
 		return None
 	else:
 		for i in range(len(L)):
-			if i > 0  and len(L[i] != len(M[i])):
+			if i > 0  and len(L[i]) != len(M[i]):
 				return None
 			N = []
 			for j in range(len(L[0])):
