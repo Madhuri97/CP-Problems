@@ -22,8 +22,8 @@ def recursion_binarysearchvalues(L, v):
 	lo = 0
 	hi = len(L)-1
 	mid = 0
-	l1 = []
-	t1 = ()
+	l1 = [()]
+
 	while lo <= hi:
 		mid = (hi+lo)//2
 		if L[mid] < v:
