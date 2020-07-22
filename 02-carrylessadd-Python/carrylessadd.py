@@ -11,17 +11,16 @@ def fun_carrylessadd(x, y):
 		return y
 	if(y == 0):
 		return x
-	if(x > 0 and y > 0): #T
-		m = 1			 
-		each_sum = 0	
-		while (x or y):  #
-			each_sum = ((x%10)+(y%10))
-			each_sum = each_sum%10
-			sum = (each_sum*m) + sum
-			x = math.floor(x/10)
-			y = math.floor(y/10)
-			m = m*10
-		s = str(sum)
-		s.strip("0")
-		return int(s)
-	return 0
+	m = 1			 
+	each_sum = 0	
+	while (x or y):                #T T 
+		each_sum = ((x%10)+(y%10)) #x = 5 y = 5 => 10  x = 8 y = 6 => 14
+		each_sum = each_sum%10     #0  4
+		sum = (each_sum*m) + sum   #0  40
+		x = math.floor(x/10)       #78 7
+		y = math.floor(y/10)       #76 7
+		m = m*10                   #10 100
+	s = str(sum)
+	s.strip("0")
+	return int(s)
+	
