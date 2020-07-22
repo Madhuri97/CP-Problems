@@ -6,6 +6,7 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	# Your code goes here
-	l = list(n)
+	n = str(n)
+	l = [int(i) for i in str(n)]
 	print(l)
-	longestdigitrun(117773732)
+longestdigitrun(117773732)
