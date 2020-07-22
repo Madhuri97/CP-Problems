@@ -6,4 +6,6 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	# Your code goes here
-	pass
+	l = list(n)
+	print(l)
+	longestdigitrun(117773732)
