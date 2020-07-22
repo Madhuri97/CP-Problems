@@ -6,25 +6,41 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	# Your code goes here
-	n = str(n)
-	l = [str(i) for i in str(n)]
-	p = l[0]
+	if n < 0:
+		n = -n
+	l = [str(i) for i in range(n)]
+	di = {}
 	count = 1
-	best = p
-	bestcnt = count
-	while len(l) != 0:
-		for j in len(l):
-			c = l[j+1]
-			if c == p:
-				count += 1
-			else:
-				p = c
-				count = 1
+	for i in range(len(l) - 1):
+		if l[i] == l[i+1]:
+			count = 0
+		if l[i] in di:
+			di[l[i]] = di[l[i]] + 1
+		else:
+			di[l[i]] = 1
+	if count == 1:
+		l.sort()
+		return l[0]
+	newdi = {}
+	h = sorted(di.keys())
+	for i in h:
+		newdi[i] = di[i]
+	newdi = sorted(newdi.items(), key = lambda item:item[1], reverse = True)
+	return newdi[0][0]
+
+	# while len(l) != 0:
+	# 	for j in len(l):
+	# 		c = l[j+1]
+	# 		if c == p:
+	# 			count += 1
+	# 		else:
+	# 			p = c
+	# 			count = 1
 			
-			if count > bestcnt:
-				bestcnt = count
-				best = c
-				return best
+	# 		if count > bestcnt:
+	# 			bestcnt = count
+	# 			best = c
+	# 			return best
 			
 
 # 	print(l)
