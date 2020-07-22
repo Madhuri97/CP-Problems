@@ -8,16 +8,16 @@ def longestdigitrun(n):
 	# Your code goes here
 	if n < 0:
 		n = -n
-	l = [str(i) for i in range(n)]
+	l = list(map(int,str(n)))
 	di = {}
 	count = 1
 	for i in range(len(l) - 1):
 		if l[i] == l[i+1]:
 			count = 0
-		if l[i] in di:
-			di[l[i]] = di[l[i]] + 1
-		else:
-			di[l[i]] = 1
+			if l[i] in di:
+				di[l[i]] = di[l[i]] + 1
+			else:
+				di[l[i]] = 1
 	if count == 1:
 		l.sort()
 		return l[0]
