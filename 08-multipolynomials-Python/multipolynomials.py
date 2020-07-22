@@ -5,6 +5,12 @@
 # 5), and:    (2x**2 + 3)(4x + 5) = 8x**3 + 10x**2 + 12x + 15
 # And so this returns the list [8, 10, 12, 15].
 
+
 def multipolynomials(p1, p2):
-	# Your code goes here
-	pass
+	l1 = len(p1)
+	l2 = len(p2)
+	p3 = [0]*(l1 + l2 - 1)
+	for i in range(l1):
+		for j in range(l2):
+			p3[i+j] = p3[i+j] +p1[i]*p2[j]
+	return p3
