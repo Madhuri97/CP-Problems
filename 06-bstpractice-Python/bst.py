@@ -10,7 +10,20 @@ class BST(object):
 
     def insert(self, new_val):
         # Your code goes here
-        pass
+        if self.root.value == new_val:
+            return False
+        elif new_val < self.root.value:
+            if self.root.left:
+                return self.root.left.insert(new_val)
+            else:
+                self.root.left = Node(new_val)
+                return True
+        else: 
+            if self.root.right:
+                return self.root.right.insert(new_val)
+            else:
+                self.root.right = Node(new_val)
+                return True
 
     def printSelf(self):
         # Your code goes here
