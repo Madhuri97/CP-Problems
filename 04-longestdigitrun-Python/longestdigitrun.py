@@ -26,22 +26,7 @@ def longestdigitrun(n):
 	for i in h:
 		newdi[i] = di[i]
 	newdi = sorted(newdi.items(), key = lambda item:item[1], reverse = True)
-	return newdi[0][0]
-
-	# while len(l) != 0:
-	# 	for j in len(l):
-	# 		c = l[j+1]
-	# 		if c == p:
-	# 			count += 1
-	# 		else:
-	# 			p = c
-	# 			count = 1
-			
-	# 		if count > bestcnt:
-	# 			bestcnt = count
-	# 			best = c
-	# 			return best
-			
+	return newdi[0][0]			
 
 # 	print(l)
 # longestdigitrun(117773732)
