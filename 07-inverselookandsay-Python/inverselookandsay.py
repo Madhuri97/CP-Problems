@@ -10,6 +10,7 @@
 
 def inverselookandsay(a):
 	# Your code goes here
+	
 	fnl = []
 	for i in range(len(a)):
 		if a[i] == ():
@@ -18,4 +19,3 @@ def inverselookandsay(a):
 		for j in range(p):
 			fnl.append(q)
 	return fnl
-	
