@@ -7,7 +7,7 @@
 def longestdigitrun(n):
 	# Your code goes here
 	n = str(n)
-	l = [int(i) for i in str(n)]
+	l = [str(i) for i in str(n)]
 	p = l[0]
 	count = 1
 	best = p
