@@ -8,5 +8,24 @@ def longestdigitrun(n):
 	# Your code goes here
 	n = str(n)
 	l = [int(i) for i in str(n)]
-	print(l)
-longestdigitrun(117773732)
+	p = l[0]
+	count = 1
+	best = p
+	bestcnt = count
+	while len(l) != 0:
+		for j in len(l):
+			c = l[j+1]
+			if c == p:
+				count += 1
+			else:
+				p = c
+				count = 1
+			
+			if count > bestcnt:
+				bestcnt = count
+				best = c
+				return best
+			
+
+# 	print(l)
+# longestdigitrun(117773732)
