@@ -14,4 +14,20 @@
 
 def destructiveshortenlongruns(L, k):
 	# Your code goes here
-	pass
+	m = 0
+	r = 0
+	n = 0
+	while m < len(L):
+		if m == 0:
+			r = L[m]
+			n += 1
+		elif r == L[m]:
+			n += 1
+			if n >= k:
+				L.pop(m)
+				m -= 1
+		else:
+			r = L[m]
+			n = 1
+		m += 1
+	return L
