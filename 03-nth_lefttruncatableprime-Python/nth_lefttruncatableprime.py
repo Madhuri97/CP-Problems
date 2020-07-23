@@ -6,8 +6,6 @@
 # So nthLeftTruncatablePrime(0) retunearestKaprekarNumber(n)rns 2, and 
 # nthLeftTruncatablePrime(10) returns 53.
 
-
-
 import math
 def isPrime(n):
     if n > 1:
