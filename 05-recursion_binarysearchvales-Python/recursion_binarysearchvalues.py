@@ -28,7 +28,6 @@ def isBinarySearch(L,lo,hi,v,Li):
 		if v < L[mid]:
 			return isBinarySearch(L, lo, mid - 1, v, Li)
 		else:
-			lo = mid + 1
 			return isBinarySearch(L, mid + 1, hi, v, Li)
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
