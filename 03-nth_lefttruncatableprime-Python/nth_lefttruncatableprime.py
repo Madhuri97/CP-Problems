@@ -9,6 +9,36 @@
 
 
 import math
+def isPrime(n):
+    if n > 1:
+        for i in range(2,n):
+            if n%i == 0:
+                return False
+        return True
+    return False
+
+def digitCount(n):
+    n = abs(n)
+    cnt = 1
+    while n > 10:
+        n = n//10
+        cnt += 1
+    return cnt
+
+def isLeftTruncatablePrime(n):
+    if isPrime(n) == False or str(n).__contains__("0"):
+        return False
+    else:
+        d = digitCount(n)
+        for i in range(1,d):
+            k = n%(10**i)
+            if isPrime(k) == False:
+                return False
+        return True
 
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    l = []
+    for i in range(500):
+        if isLeftTruncatablePrime(i):
+            l.append(i)
+    return l[n]
