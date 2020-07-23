@@ -33,7 +33,7 @@ def ishappynumber(n):
             l.append(res)
             n = res
     return True
-    
+
 def ishappyprimenumber(n):
     # Your code goes here
     if ishappynumber(n) and isPrime(n):
