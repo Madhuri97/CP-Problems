@@ -44,5 +44,4 @@ def nthcircularprime(n):
 			l.append(i)
 	return l[n]
 	# Your code goes here
-
 	
