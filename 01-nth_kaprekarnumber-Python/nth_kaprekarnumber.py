@@ -32,7 +32,7 @@ def isKaprekar(n):
 
 def fun_nth_kaprekarnumber(n):
     l = []
-    for i in range(5000):
+    for i in range(78000):
         if isKaprekar(i):
             l.append(i)
     return l[n]
