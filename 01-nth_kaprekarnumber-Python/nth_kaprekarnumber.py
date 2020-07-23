@@ -9,5 +9,30 @@
 
 import math
 
+def isKaprekar(n):
+    if n <= 0:
+        return False
+    k = n**2
+    if k < 10:
+        if k == n:
+            return True
+    numk = math.ceil(math.log(k,10))
+    cnt = 1
+    while cnt < numk:
+        n1 = k%10**cnt
+        n2 = k//10**cnt
+        if n1 == 0:
+            cnt += 1
+            continue
+        if n1 + n2 == n:
+            return True
+            break
+        cnt += 1
+    return False
+
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    l = []
+    for i in range(5000):
+        if isKaprekar(i):
+            l.append(i)
+    return l[n]
