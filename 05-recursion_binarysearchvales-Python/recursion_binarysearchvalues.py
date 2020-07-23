@@ -26,15 +26,14 @@ def isBinarySearch(L,lo,hi,v,Li):
 		return Li
 	else:
 		if v < L[mid]:
-			hi = mid -1
-			return isBinarySearch(L, lo, hi, v, Li)
+			return isBinarySearch(L, lo, mid - 1, v, Li)
 		else:
 			lo = mid + 1
-			return isBinarySearch(L, lo, hi, v, Li)
+			return isBinarySearch(L, mid + 1, hi, v, Li)
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
 	lo = 0
 	hi = len(L)-1
 	Li = [] 
-	return recursion_binarysearchvalues(L,lo,hi,v,Li)
+	return isBinarySearch(L,lo,hi,v,Li)
 	
