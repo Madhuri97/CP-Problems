@@ -23,5 +23,3 @@ def fixmostlymagicsquare(L):  #[[2, 7, 9], [9, 5, 1], [4, 3, 8]]
 		d[idx1] = max(d) - k
 		L[idx] = d
 		return L
-		
-	# Your code goes here
