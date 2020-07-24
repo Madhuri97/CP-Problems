@@ -19,5 +19,3 @@ def nthautomorphicnumbers(n):
 		if isAutomorphicNumber(i):
 			l.append(i)
 	return l[n-1]
-
-	
