@@ -5,6 +5,20 @@
 # fun_nth_tidynumber(5) = 6
 # fun_nth_tidynumber(15) = 17
 # fun_nth_tidynumber(35) = 46
+def isTidyNumber(n):
+    p = 10
+    while (n): 
+        r = n%10 #2
+        n = n//10
+        if r > p:
+            return False
+        p = r
+    return True
+        
 
 def fun_nth_tidynumber(n):
-    return 0
+    l = []
+    for i in range(1000):
+        if isTidyNumber(i):
+            l.append(i)
+    return l[n+1]
