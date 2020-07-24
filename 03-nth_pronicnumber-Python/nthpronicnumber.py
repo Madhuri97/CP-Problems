@@ -13,7 +13,7 @@ def isPronicNumber(n):
 def nthpronicnumber(n):
 	# Your code goes here\
 	l = []
-	for i in range(2000):
+	for i in range(3000):
 		if isPronicNumber(i):
 			l.append(i)
 	return l[n]
