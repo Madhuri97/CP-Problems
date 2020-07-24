@@ -4,12 +4,12 @@
 # number n is a product of x and (x+1).
 
 def isPronicNumber(n):
-	for i in range(n):
+	for i in range(n+1):
 		p = i *(i+1)
 		if p == n:
 			return True
 		return False
-		
+
 def nthpronicnumber(n):
 	# Your code goes here\
 	l = []
