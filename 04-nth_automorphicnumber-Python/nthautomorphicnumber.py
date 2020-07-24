@@ -12,7 +12,6 @@ def isAutomorphicNumber(n):
 		return True
 	return False
 
-	
 def nthautomorphicnumbers(n):
 	# Your code goes here
 	l = []
