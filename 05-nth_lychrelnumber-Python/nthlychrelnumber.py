@@ -32,3 +32,4 @@ def nthlychrelnumbers(n):
 		if isLychrelNumber(i):
 			l.append(i)
 	return l[n-1]
+	
