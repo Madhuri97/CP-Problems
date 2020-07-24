@@ -9,6 +9,7 @@ def isPronicNumber(n):
 		if p == n:
 			return True
 		return False
+		
 def nthpronicnumber(n):
 	# Your code goes here\
 	l = []
