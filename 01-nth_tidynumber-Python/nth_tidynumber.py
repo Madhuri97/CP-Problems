@@ -14,11 +14,10 @@ def isTidyNumber(n):
             return False
         p = r
     return True
-        
 
 def fun_nth_tidynumber(n):
     l = []
-    for i in range(1000):
+    for i in range(5000):
         if isTidyNumber(i):
             l.append(i)
     return l[n+1]
