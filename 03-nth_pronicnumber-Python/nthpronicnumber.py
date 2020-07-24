@@ -5,10 +5,10 @@
 
 def isPronicNumber(n):
 	for i in range(n+1):
-		p = i *(i+1)
+		p = i*(i+1)
 		if p == n:
 			return True
-		return False
+	return False
 
 def nthpronicnumber(n):
 	# Your code goes here\
