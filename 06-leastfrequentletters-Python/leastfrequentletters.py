@@ -9,6 +9,14 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
+	st = ""
+	cnt = 0
 	if s.isalpha():
-		return True
+		for i in s:
+			if i not in st:
+				st += i
+			cnt += 1
+		if cnt < 1:
+			return st
+		return False
 	return ""
