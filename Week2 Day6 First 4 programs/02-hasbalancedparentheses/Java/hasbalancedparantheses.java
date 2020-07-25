@@ -7,13 +7,28 @@
 // # is also not balanced. Hint: keep track of how many right parentheses remain unmatched as 
 // # you iterate over the string.
 
- 
+import java.util.*;
+
 class hasbalancedparantheses {
 	public boolean fun_hasbalancedparantheses(String s){
-		if(s == " "){
-			return true;
+		Stack<Character> stk = new Stack<Character>();
+		boolean b = true;
+		for(int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if(c == '(' && b) {
+				stk.push(c);
+			} else if(c == '(' && !b) {
+				return false;
+			} else if(c == ')') {
+				b = false;
+				if(!stk.isEmpty()) {
+					stk.pop();
+				} else {
+					return false;
+				}
+			}
 		}
-		return false;	
+		return (!stk.isEmpty()) ? false : true;	
 	}
 	public static void main(String[] args) {
 		
