@@ -14,6 +14,7 @@ class nthtenlyprime {
 		}
 		return cnt == 2;
 	}
+	
 	public boolean isTenly(int n) {
 		int sm = 0;
 		while(n!=0) {
