@@ -6,6 +6,10 @@ from itertools import permutations
 
 def getallpermutations(x):
 	# Your code goes here
-	l = permutations(x)
-	for i in list(l):
-		return ''.join(i)
+	p = permutations(x)
+	print(p)
+	l = []
+	for i in p:
+		l.append(i)
+	return l
+
