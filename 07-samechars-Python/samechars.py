@@ -14,6 +14,4 @@ def samechars(s1, s2):
 		if str2 == s:
 			return True
 		return False
-	return False
-
-	
+	return False	
