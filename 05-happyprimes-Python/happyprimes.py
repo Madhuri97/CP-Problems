@@ -10,10 +10,12 @@
 # However, they also are here specifically because they are just the right helper 
 # functions to make nthHappyNumber(n) easier to write!
 def isPrime(n):
-    for i in range(2,n):
-        if(n%1 == 0 and n%i == 0):
-            return False
-    return True
+    if n > 1:
+        for i in range(2,n):
+            if(n%1 == 0 and n%i == 0):
+                return False
+        return True
+    return False
 
 def sumOfSquares(n):
     s = 0
@@ -32,7 +34,7 @@ def ishappynumber(n):
         else:
             l.append(res)
             n = res
-    return True
+    return False
 
 def ishappyprimenumber(n):
     # Your code goes here
