@@ -9,4 +9,6 @@
 
 def leastfrequentletters(s):
 	# Your code goes here
-	pass
+	if s.isalpha():
+		return True
+	return ""
