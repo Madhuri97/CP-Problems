@@ -9,6 +9,7 @@
 # Note: the autograder will grade each of the following functions, so they are required. 
 # However, they also are here specifically because they are just the right helper 
 # functions to make nthHappyNumber(n) easier to write!
+
 def isPrime(n):
     if n > 1:
         for i in range(2,n):
