@@ -14,9 +14,10 @@ def samechars(s1, s2):
 				if s1 == s2:
 					s += i
 				s += j
-		for k in s:
-			if k in s2:
-				return True
+			for k in s:
+				if k in s2:
+					return True
+				return False
 	return False
 
 	
